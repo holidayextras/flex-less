@@ -1,0 +1,139 @@
+/*---FlexBox---
+  @flex: flex, flex-inline
+  --------------------------*/
+.flex (@flex: flex){
+  display: -webkit-box;
+  display: -moz-box;
+  display: ~"-ms-@{flex}box";
+  display: ~"-webkit-@{flex}";
+  display: @flex;
+}
+
+/*---Flexbox Direction---
+  @type: row, column
+  Direction: normal, reverse
+  --------------------------*/
+
+.flex-direction (@type: row, @direction: normal) when not (@direction = reverse) {
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: @type;
+  -ms-flex-direction:  @type;
+  flex-direction: @type;
+}
+
+.flex-direction (@type: row, @direction: normal) when (@type = row) {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+}
+
+.flex-direction (@type: row, @direction: normal) when (@direction = reverse) {
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  -webkit-flex-direction: ~"@{type}-@{direction}";
+  -ms-flex-direction: ~"@{type}-@{direction}";
+  flex-direction: ~"@{type}-@{direction}";
+}
+
+.flex-direction (@type: row, @direction: normal) when (@type = column) {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+}
+
+
+/*---Flexbox Wrap---
+  @wrap: wrap, nowrap, wrap-reverse
+  --------------------------*/
+
+.flex-wrap (@wrap: wrap) {
+  -webkit-flex-wrap: @wrap;
+  -ms-flex-wrap: @wrap;
+  flex-wrap: @wrap;
+}
+
+/*---Flexbox Justify Content---
+  @justify-content: start, end, center, space-between, space-around
+
+  *FIXME* - Creates duplicate CSS
+  --------------------------*/
+
+.flex-justify-content (@justify-content: start) {
+    -webkit-box-pack: @justify-content;
+    -moz-box-pack: @justify-content;
+    -ms-flex-pack: @justify-content;
+    -webkit-justify-content: @justify-content;
+    justify-content: @justify-content;
+}
+
+.flex-justify-content (@justify-content: start) when (@justify-content = start) {
+    -webkit-justify-content: ~"flex-@{justify-content}";
+    justify-content: ~"flex-@{justify-content}";
+}
+.flex-justify-content (@justify-content: start) when (@justify-content = end) { 
+    -webkit-justify-content: ~"flex-@{justify-content}";
+    justify-content: ~"flex-@{justify-content}";
+}
+.flex-justify-content (@justify-content: start) when (@justify-content = space-between) {
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+}
+.flex-justify-content (@justify-content: start) when (@justify-content = space-around) {
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: distribute;
+}
+
+/*---Flexbox Align Items---
+  @align-items: center, baseline, stretch, start, end
+  --------------------------*/
+
+.flex-align-items (@align-items: stretch) {
+  -ms-flex-align: @align-item;
+  -webkit-box-align: @align-item;
+  -moz-box-align: @align-item;
+  -webkit-align-items: @align-item;
+  align-items: @align-item;
+}
+
+.flex-align-items (@align-item: stretch) when (@align-item = start) {
+  -webkit-align-items:  ~"flex-@{align-item}";
+  align-items: ~"flex-@{align-item}";
+}
+
+
+.flex-align-items (@align-item: stretch) when (@align-item = end) {
+  -webkit-align-items:  ~"flex-@{align-item}";
+  align-items: ~"flex-@{align-item}";
+}
+
+/*---Flexbox Align Content---
+  @align-items: start, end, center, space-between, space-around
+
+  *FIXME* - Creates duplicate CSS
+  --------------------------*/
+
+.flex-align-content (@align-content: start) {
+  -webkit-align-content: @align-content;
+  -ms-flex-line-pack: @align-content;
+  align-content: @align-content;
+}
+
+.flex-align-content (@align-content: start) when (@align-content = start) {
+  -webkit-align-content: ~"flex-@{align-content}";
+  align-content: ~"flex-@{align-content}";
+}
+
+.flex-align-content (@align-content: start) when (@align-content = end) {
+  -webkit-align-content: ~"flex-@{align-content}";
+  align-content: ~"flex-@{align-content}";
+}
+
+.flex-align-content (@align-content: start) when (@align-content = space-between) {
+  -ms-flex-line-pack: justify;
+}
+
+.flex-align-content (@align-content: start) when (@align-content = space-around) {
+  -ms-flex-line-pack: distribute;
+}
+
