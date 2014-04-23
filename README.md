@@ -6,7 +6,7 @@ Flex Less is a mixin created to enable to to use all basic functions of CSS flex
 It's a work in progress to please feel free to contribute.
 
 
-FlexBox
+Flexbox
 -------
 @flex: flex, flex-inline
   
