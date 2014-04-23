@@ -22,6 +22,7 @@ Flexbox Wrap
 Flexbox Justify Content
 -------
 @justify-content: start, end, center, space-between, space-around
+
 **FIXME** - Creates duplicate CSS
   
 Flexbox Align Items
@@ -31,4 +32,5 @@ Flexbox Align Items
 Flexbox Align Content
 -------
 @align-items: start, end, center, space-between, space-around
+
 **FIXME** - Creates duplicate CSS
