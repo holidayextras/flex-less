@@ -2,7 +2,7 @@ Flex Less
 =========
 
 Flexbox is awesome! It's a powerful addition to CSS and you should be using it NOW!
-The [CSS Flexible Box Layout Module](http://www.w3.org/TR/css3-flexbox/){:target="_blank"} has been a Candidate Recommendation since September 2012.
+The [CSS Flexible Box Layout Module](http://www.w3.org/TR/css3-flexbox/) has been a Candidate Recommendation since September 2012.
 
 > "That’s cool! But I can’t use it because XYZ doesn’t support it."
 
@@ -33,7 +33,7 @@ Safari v.6+
 Blackberry v.10+  
 
 ## Flex-less
-If you want to learn more about FlexBox please visit [A Complete Guide to Flexbox](http://css-tricks.com/snippets/css/a-guide-to-flexbox/){:target="_blank"} a comprehensive and brilliant guide (as always) from CSS Tricks
+If you want to learn more about FlexBox please visit [A Complete Guide to Flexbox](http://css-tricks.com/snippets/css/a-guide-to-flexbox/) a comprehensive and brilliant guide (as always) from CSS Tricks
 (descriptions for each section below are from this very guide)
 
 ## How to use
