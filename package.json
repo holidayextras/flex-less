@@ -1,0 +1,23 @@
+{
+  "name": "flex-less",
+  "version": "1.0.0",
+  "description": "A mixin created to enable you to use all basic functions of CSS flexbox for all supported browsers.",
+  "main": "flex.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jodiedoubleday/flex-less"
+  },
+  "keywords": [
+    "flexbox",
+    "less",
+    "css",
+    "css3",
+    "flex",
+    "flexybox"
+  ],
+  "author": "jodie.doubleday@holidayextras.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jodiedoubleday/flex-less/issues"
+  }
+}
