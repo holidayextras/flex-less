@@ -89,22 +89,22 @@
   --------------------------*/
 
 .flex-align-items (@align-items: stretch) {
-  -ms-flex-align: @align-item;
-  -webkit-box-align: @align-item;
-  -moz-box-align: @align-item;
-  -webkit-align-items: @align-item;
-  align-items: @align-item;
+  -ms-flex-align: @align-items;
+  -webkit-box-align: @align-items;
+  -moz-box-align: @align-items;
+  -webkit-align-items: @align-items;
+  align-items: @align-items;
 }
 
-.flex-align-items (@align-item: stretch) when (@align-item = start) {
-  -webkit-align-items:  ~"flex-@{align-item}";
-  align-items: ~"flex-@{align-item}";
+.flex-align-items (@align-items:stretch) when (@align-items = start) {
+  -webkit-align-items:  ~"flex-@{align-items}";
+  align-items: ~"flex-@{align-items}";
 }
 
 
-.flex-align-items (@align-item: stretch) when (@align-item = end) {
-  -webkit-align-items:  ~"flex-@{align-item}";
-  align-items: ~"flex-@{align-item}";
+.flex-align-items (@align-items: stretch) when (@align-items = end) {
+  -webkit-align-items:  ~"flex-@{align-items}";
+  align-items: ~"flex-@{align-items}";
 }
 
 /*---Flexbox Align Content---
@@ -136,4 +136,3 @@
 .flex-align-content (@align-content: start) when (@align-content = space-around) {
   -ms-flex-line-pack: distribute;
 }
-
